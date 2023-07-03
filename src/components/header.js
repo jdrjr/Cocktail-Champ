@@ -9,19 +9,19 @@ export default function Header() {
         <div class="text-sm lg:flex-grow">
           <a
             href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4"
           >
             Docs
           </a>
           <a
             href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white mr-4"
           >
             Examples
           </a>
           <a
             href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white"
+            class="block mt-4 lg:inline-block lg:mt-0 text-red-200 hover:text-white"
           >
             Blog
           </a>
