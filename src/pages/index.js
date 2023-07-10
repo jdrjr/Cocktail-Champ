@@ -18,7 +18,9 @@ export default function Home({ recipes }) {
   return (
     <>
     <Header></Header>
+    <div class="grid grid-cols-4 gap-4">
     <Recipes recipes={recipes}></Recipes>
+    </div>
     </>
   );
 }

@@ -1,75 +1,26 @@
-export default function Recipes({recipes}) {
-
-    return (
-        <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        background: "rgb(33, 33, 33)",
-      }}
-    >
+export default function Recipes({ recipes }) {
+  return (
+    <>
       {recipes.map((recipe) => (
-        <div
-          key={recipe.idDrink}
-          style={{
-            flex: "1 0 25%",
-            margin: "5px",
-            border: "5px solid white",
-            background: "rgb(33, 33, 33)",
-            transition: "transform 0.3s ease-out",
-            transform: "scale(1)",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = "scale(1.01)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = "scale(1)";
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "flex-start" }}>
-            <img
-              src={recipe.strDrinkThumb}
-              style={{ height: "100px", width: "100px", margin: "5px", borderRadius: "5px" }}
-              alt={recipe.strDrink}
-            />
-            <div style={{ marginLeft: "2px" }}>
-              <p
-                style={{
-                  display: "inline-block",
-                  fontFamily: "monospace",
-                  fontWeight: "lighter",
-                  textDecorationLine: "underline",
-                  fontSize: "18px"
-                }}
-              >
-                {recipe.strDrink}
-              </p>
-              <div style={{ display: "flex", alignItems: "flex-start" }}>
-                <p
-                  style={{
-                    marginLeft: "20px",
-                    display: "list-item",
-                    fontFamily: "monospace",
-                    fontWeight: "lighter",
-                  }}
-                >
-                  {recipe.strMeasure1}
-                </p>
-                <p
-                  style={{
-                    display: "inline-flex",
-                    fontFamily: "monospace",
-                    fontWeight: "lighter",
-                    marginLeft: "5px",
-                  }}
-                >
-                  {recipe.strIngredient1}
-                </p>
-              </div>
-            </div>
+        <div className="max-w-sm rounded overflow-hidden shadow-lg m-2 bg-black-500 shadow-lg shadow-cyan-500/50">
+          <img className="w-full" src={recipe.strDrinkThumb} alt="Sunset in the mountains" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{recipe.strDrink}</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
+              eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #{recipe.strGlass}
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #{recipe.strTags}
+            </span>
           </div>
         </div>
       ))}
-    </div>
-    );
-  }
+    </>
+  );
+}
