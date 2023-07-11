@@ -16,11 +16,11 @@ export default function Home({ recipes }) {
   console.log(recipes);
 
   return (
-    <>
+    <div className="bg-black">
     <Header></Header>
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid lg:grid-cols-4 gap-5 md:grid-cols-3 p-8">
     <Recipes recipes={recipes}></Recipes>
     </div>
-    </>
+    </div>
   );
 }
