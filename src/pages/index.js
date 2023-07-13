@@ -3,7 +3,7 @@ import Recipes from "../components/recipes"
 
 export async function getServerSideProps() {
   const res = await fetch(
-    "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php?s="
+    "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s="
   );
   const data = await res.json();
   const recipes = data.drinks.sort((a, b) =>
