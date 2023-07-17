@@ -7,7 +7,7 @@ export default function Recipes({ recipes }) {
           className="max-w-sm rounded-xl overflow-hidden m-2 bg-black hover:shadow-lg hover:shadow-yellow-500/50 border border-white-500 relative">
           <img className="w-full" src={recipe.strDrinkThumb + '/preview'} alt={recipe.strDrink} />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-yellow-600 underline">{recipe.strDrink}</div>
+            <div className="font-josef text-xl mb-2 text-amber-300 underline">{recipe.strDrink}</div>
             <p className="text-base text-white overflow-hidden text-ellipsis line-clamp-3">
               {recipe.strMeasure1} {recipe.strIngredient1} <br />
               {recipe.strMeasure2} {recipe.strIngredient2} <br />
@@ -26,7 +26,7 @@ export default function Recipes({ recipes }) {
           </div>
           {/* THIS IS FOR THE HIDDEN OVERLAY, WHEN YOU HOVERE, IT APPEARS. SHOWS RECIPE. */}
           <div className="text-white overflow-auto px-3 absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-100 block items-center justify-center transition duration-300 ease-in-out hover:cursor-pointer">
-            <p className="text-center text-3xl text-yellow-600 py-3 underline">{recipe.strDrink}</p>
+            <p className="font-josef text-center text-3xl text-amber-300 py-3 underline">{recipe.strDrink}</p>
             {/* <p className="text-center text-lg text-white px-3 overflow-auto max-h-full"> */}
               <ul className="list-disc">
                 {recipe.strIngredient1 && (

@@ -1,9 +1,9 @@
 export default function Header({handleSearch}) {
 
   return (
-    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-yellow-600 p-6 shadow-sm shadow-yellow-600/50">
+    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap p-6 shadow-sm bg-amber-300 shadow-amber-600/50">
       <div class="flex items-center flex-shrink-0 text-white mr-6 ml-5">
-        <span class="font-semibold text-xl tracking-tight">Cocktail Champ</span>
+        <span class="font-josef text-xl tracking-tight">COCKTAIL CHAMP</span>
       </div>
       <div class="block lg:hidden"></div>
 
