@@ -8,7 +8,7 @@ export default function Recipes({ recipes }) {
           <img className="w-full" src={recipe.strDrinkThumb + '/preview'} alt={recipe.strDrink} />
           <div className="px-6 py-4">
             <div className="font-josef text-xl mb-2 text-amber-300 underline">{recipe.strDrink}</div>
-            <p className="text-base text-white overflow-hidden text-ellipsis line-clamp-3">
+            <p className="text-base font-thin font-josef text-white overflow-hidden text-ellipsis line-clamp-3">
               {recipe.strMeasure1} {recipe.strIngredient1} <br />
               {recipe.strMeasure2} {recipe.strIngredient2} <br />
               {recipe.strMeasure3} {recipe.strIngredient3} <br />
@@ -16,7 +16,7 @@ export default function Recipes({ recipes }) {
               {recipe.strInstructions}
             </p>
           </div>
-          <div className="px-6 pt-4 pb-2">
+          <div className=" font-josef px-6 pt-4 pb-2">
            { recipe.strGlass && <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #{recipe.strGlass}
             </span> }
@@ -25,7 +25,7 @@ export default function Recipes({ recipes }) {
             </span> }
           </div>
           {/* THIS IS FOR THE HIDDEN OVERLAY, WHEN YOU HOVERE, IT APPEARS. SHOWS RECIPE. */}
-          <div className="text-white overflow-auto px-3 absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-100 block items-center justify-center transition duration-300 ease-in-out hover:cursor-pointer">
+          <div className="text-white font-josef overflow-auto px-3 absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-100 block items-center justify-center transition duration-300 ease-in-out hover:cursor-pointer">
             <p className="font-josef text-center text-3xl text-amber-300 py-3 underline">{recipe.strDrink}</p>
             {/* <p className="text-center text-lg text-white px-3 overflow-auto max-h-full"> */}
               <ul className="list-disc">

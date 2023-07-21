@@ -1,9 +1,9 @@
 export default function Header({handleSearch}) {
 
   return (
-    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap p-6 shadow-sm bg-amber-300 shadow-amber-600/50">
+    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap p-6 shadow-lg bg-gradient-to-b from-yellow-100 via-yellow-300 to-yellow-500 shadow-yellow-500/80">
       <div class="flex items-center flex-shrink-0 text-white mr-6 ml-5">
-        <span class="font-josef text-xl tracking-tight">COCKTAIL CHAMP</span>
+        <span class="font-medium font-josef text-2xl tracking-tight drop-shadow-xl">COCKTAIL CHAMP</span>
       </div>
       <div class="block lg:hidden"></div>
 
@@ -35,7 +35,7 @@ export default function Header({handleSearch}) {
           <input
             type="search"
             id="default-search"
-            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-zinc-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Search Cocktails"
             required
             onChange={(e) => handleSearch(e.target.value)}
